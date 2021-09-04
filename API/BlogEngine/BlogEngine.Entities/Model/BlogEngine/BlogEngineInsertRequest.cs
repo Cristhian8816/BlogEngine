@@ -21,7 +21,7 @@ namespace BlogEngine.Entities.Model
         /// </summary>
         [Required(AllowEmptyStrings = false)]
         [StringLength(150, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
-        public string Name { get; set; }
+        public string Title { get; set; }
         /// <summary>
         /// Gets or Sets from Description.
         /// </summary>
@@ -29,18 +29,11 @@ namespace BlogEngine.Entities.Model
         [StringLength(4000, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
         public string Description { get; set; }
         /// <summary>
-        /// Gets or Sets from ProfileId.
+        /// Gets or Sets from Description.
         /// </summary>
-        [Required]
-        [Range(1, int.MaxValue, ErrorMessageResourceName = "modelRequiredMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
-        public int ProfileId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets from BehaviourTypeId.
-        /// </summary>
-        [Required]
-        [Range(1, int.MaxValue, ErrorMessageResourceName = "modelRequiredMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
-        public int BehaviourTypeId { get; set; }
+        [Required(AllowEmptyStrings = false)]
+        [StringLength(20, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
+        public string Owner { get; set; }
 
         /// <summary>
         /// Gets or Sets from CreatedAt.
@@ -52,7 +45,7 @@ namespace BlogEngine.Entities.Model
         /// Gets or Sets from UpdatedAt.
         /// </summary>
         [Required]
-        public DateTime UpdatedAt { get; set; }       
+        public DateTime ModifiedAt { get; set; }      
     }
 }
 

@@ -28,9 +28,8 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 BlogEngine BlogEnginetest = new BlogEngine()
                 {
                     Id = i,
-                    Name = "word" + i.ToString(),
-                    Description = "word" + i.ToString(),
-                    ProfileId = i,
+                    Title = "word" + i.ToString(),
+                    Description = "word" + i.ToString(),                  
                     CreatedAt = System.DateTime.Now,
                     UpdatedAt = System.DateTime.Now,
                 };

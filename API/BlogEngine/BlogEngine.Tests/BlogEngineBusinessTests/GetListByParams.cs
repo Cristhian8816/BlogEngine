@@ -106,7 +106,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             // Act
             BlogEngineGetListByParams BlogEngineGetListByParamstest = new BlogEngineGetListByParams()
             {
-                Name = "word/*",
+                Title = "word/*",
                 Description = "word/*",
                 CreatedAt = System.DateTime.Now,
                 UpdatedAt = System.DateTime.Now,
@@ -169,9 +169,8 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 BlogEngine BlogEnginetest = new BlogEngine()
                 {
                     Id = i,
-                    Name = "c" + i.ToString(),
-                    Description = "c" + i.ToString(),
-                    ProfileId = i,
+                    Title = "c" + i.ToString(),
+                    Description = "c" + i.ToString(),                  
                     CreatedAt = System.DateTime.Now,
                     UpdatedAt = System.DateTime.Now,
                 };

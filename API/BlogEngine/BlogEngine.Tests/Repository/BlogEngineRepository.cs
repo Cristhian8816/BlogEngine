@@ -87,7 +87,7 @@ namespace BlogEngine.Tests.Repository
         /// </summary>
         /// <param name="objectGetListByParams"></param>
         /// <returns>BlogEngineResponse</returns>
-        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams)
+        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams, UsersAuthenticated userAuthenticated)
         {
             return GetSuccessResponse();
 

@@ -53,9 +53,8 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             BlogEngine BlogEnginetest = new BlogEngine()
             {
                 Id = 0,
-                Name = null,
-                Description = null,
-                ProfileId = 0,
+                Title = null,
+                Description = null,               
                 CreatedAt = System.DateTime.Now,
                 UpdatedAt = System.DateTime.Now,
             };
@@ -86,10 +85,9 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             BlogEngine BlogEnginetest = new BlogEngine()
             {
                 Id = 1,
-                Name = "c",
+                Title = "c",
                 Description = "c",
-                ProfileId = 1,
-                BehaviourTypeId = 1,
+                Owner = "User",               
                 CreatedAt = System.DateTime.Now,
                 UpdatedAt = System.DateTime.Now               
             };
@@ -114,9 +112,8 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             BlogEngine BlogEnginetest = new BlogEngine()
             {
                 Id = 1,
-                Name = "c",
-                Description = "c",
-                ProfileId = 1,
+                Title = "c",
+                Description = "c",                
                 CreatedAt = System.DateTime.Now,
                 UpdatedAt = System.DateTime.Now,
             };
@@ -152,9 +149,8 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             BlogEngine BlogEnginetest = new BlogEngine()
             {
                 Id = 1,
-                Name = "c",
-                Description = "c",
-                ProfileId = 1,
+                Title = "c",
+                Description = "c",                
                 CreatedAt = System.DateTime.Now,
                 UpdatedAt = System.DateTime.Now,
             };

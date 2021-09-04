@@ -21,8 +21,8 @@ namespace BlogEngine.Entities.Model
         /// <summary>
         /// Gets or Sets from Name.
         /// </summary>
-        [StringLength(150, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]/*[RegularExpression(@"^[a-zA-Z]{1,}|[0-9]{1,}$", ErrorMessageResourceName = "modelCharactersMessage", ErrorMessageResourceType = typeof(ResourceMessage))]*/
-        public string Name { get; set; }
+        [StringLength(20, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]/*[RegularExpression(@"^[a-zA-Z]{1,}|[0-9]{1,}$", ErrorMessageResourceName = "modelCharactersMessage", ErrorMessageResourceType = typeof(ResourceMessage))]*/
+        public string Title { get; set; }
 
         /// <summary>
         /// Gets or Sets from Description.
@@ -31,16 +31,11 @@ namespace BlogEngine.Entities.Model
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or Sets from ProfileId.
+        /// Gets or Sets from Description.
         /// </summary>
+        [StringLength(20, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]/*[RegularExpression(@"^[a-zA-Z]{1,}|[0-9]{1,}$", ErrorMessageResourceName = "modelCharactersMessage", ErrorMessageResourceType = typeof(ResourceMessage))]*/
+        public string Owner { get; set; }
 
-        public int? ProfileId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets from BehaviourTypeId.
-        /// </summary>
-       
-        public int? BehaviourTypeId { get; set; }
 
         /// <summary>
         /// Gets or Sets from CreatedAt.
@@ -50,7 +45,7 @@ namespace BlogEngine.Entities.Model
         /// <summary>
         /// Gets or Sets from UpdatedAt.
         /// </summary>      
-        public DateTime? UpdatedAt { get; set; }
+        public DateTime? ModifiedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets from CreatedBy.
@@ -62,7 +57,7 @@ namespace BlogEngine.Entities.Model
         /// Gets or Sets from UpdatedBy.
         /// </summary>
         [StringLength(50, MinimumLength = 1, ErrorMessageResourceName = "modelLenghCharacterMessage", ErrorMessageResourceType = typeof(ResourceMessage))]
-        public string? UpdatedBy { get; set; }
+        public string? ModifiedBy { get; set; }
 
         /// <summary>
         /// Gets or sets from OrderBy.

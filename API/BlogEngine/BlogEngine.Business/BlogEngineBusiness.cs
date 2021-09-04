@@ -168,14 +168,14 @@ namespace BlogEngine.Business
         /// </summary>
         /// <param name="objectGetListByParams">objectGetListByParams value</param>
         /// <returns>BlogEngineResponse.</returns>
-        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams)
+        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams, UsersAuthenticated userAuthenticated)
         {
             try
             {
                 EntityResponse<BlogEngine> response = ValidateObject(objectGetListByParams);
                 if (response.ResponseCode == 200)
                 {
-                    response = this._objectRepository.GetListByParams(objectGetListByParams);
+                    response = this._objectRepository.GetListByParams(objectGetListByParams, userAuthenticated);
                     
                 }
                 return response;
@@ -216,56 +216,6 @@ namespace BlogEngine.Business
                 return ResponseError(ex.Message);
             }
         }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="ProfileId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        public EntityResponse<BlogEngine> GetByFK_BlogEngine_Profiles(int ProfileId)
-        {
-            try
-            {
-                EntityResponse<BlogEngine> response = new();
-                response = this._objectRepository.GetByFK_BlogEngine_Profiles(ProfileId);
-                
-                return response;
-            }
-            catch (BusinessException ex)
-            {
-                return ResponseError(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return ResponseError(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="BehaviourTypeId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        public EntityResponse<BlogEngine> GetByFK_BlogEngine_BehaviourTypes(int BehaviourTypeId)
-        {
-            try
-            {
-                EntityResponse<BlogEngine> response = new();
-                response = this._objectRepository.GetByFK_BlogEngine_Profiles(BehaviourTypeId);
-
-                return response;
-            }
-            catch (BusinessException ex)
-            {
-                return ResponseError(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return ResponseError(ex.Message);
-            }
-        }
-
-
 
         /// <summary>
         /// Here goes the logic from the function delete.

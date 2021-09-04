@@ -47,31 +47,13 @@ namespace BlogEngine.Repository.Interfaces
         /// </summary>
         /// <param name="objectGetListByParams"></param>
         /// <returns>TipoIdentificacionResponse</returns>
-        EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams);
+        EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams, UsersAuthenticated userAuthenticated);
 
         /// <summary>
         /// Get all the items from the entity with pagination.
         /// </summary>
         /// <param name="objectGetListOrdered"></param>
         /// <returns>This function returns a Response type</returns>
-        EntityResponse<BlogEngine> GetListOrdered(EntityGetListOrdered objectGetListOrdered);
-
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="ProfileId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        EntityResponse<BlogEngine> GetByFK_BlogEngine_Profiles(int ProfileId);
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="BehaviourTypeId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        EntityResponse<BlogEngine> GetByFK_BlogEngine_BehaviourTypes(int BehaviourTypeId);
-
-        
-
+        EntityResponse<BlogEngine> GetListOrdered(EntityGetListOrdered objectGetListOrdered);     
     }
 }

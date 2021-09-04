@@ -46,12 +46,11 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             // Act
             BlogEngineInsertRequest BlogEnginetest = new BlogEngineInsertRequest()
             {                
-                Name = "c",
+                Title = "c",
                 Description = "c",
-                ProfileId = 1,
-                BehaviourTypeId = 1,
+                Owner = "User",                
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now               
+                ModifiedAt = System.DateTime.Now               
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {
@@ -71,11 +70,11 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             // Act
             BlogEngineInsertRequest BlogEnginetest = new BlogEngineInsertRequest()
             {
-                Name = "c",
+                Title = "c",
                 Description = "c",
-                ProfileId = 1,
+                Owner = "User",
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now,
+                ModifiedAt = System.DateTime.Now
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {
@@ -107,11 +106,11 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
             // Act
             BlogEngineInsertRequest BlogEnginetest = new BlogEngineInsertRequest()
             {
-                Name = "c",
+                Title = "c",
                 Description = "c",
-                ProfileId = 1,
+                Owner = "User",
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now,
+                ModifiedAt = System.DateTime.Now
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {

@@ -148,7 +148,7 @@ namespace BlogEngine.Repository
                 int rowsAffected = 0;
                 using (BlogEngineDaperManager dapper = new(_config))
                 {
-                    rowsAffected = dapper.Update(objectUpdate);
+                    rowsAffected = dapper.Update(objectUpdate, userAuthenticated);
                 }
                 responseMethod.ResponseCode = 200;
                 responseMethod.RowsAffected = rowsAffected;
@@ -164,13 +164,13 @@ namespace BlogEngine.Repository
         /// </summary>
         /// <param name="objectGetListByParams"></param>
         /// <returns>BlogEngineResponse</returns>
-        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams)
+        public EntityResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams, UsersAuthenticated userAuthenticated)
         {
             EntityGetResponse<BlogEngine> result;
             objectList.Clear();
             using (BlogEngineDaperManager dapper = new(_config))
             {
-                result = dapper.GetListByParams(objectGetListByParams);
+                result = dapper.GetListByParams(objectGetListByParams, userAuthenticated);
                 if (result.ResultData != null)
                 {
                     foreach (var resultObject in result.ResultData)
@@ -213,64 +213,6 @@ namespace BlogEngine.Repository
             responseMethod.IdTransactionCode = null;
             responseMethod.ResultData = objectList;
             return responseMethod;
-        }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="ProfileId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        public EntityResponse<BlogEngine> GetByFK_BlogEngine_Profiles(int ProfileId)
-        {
-            EntityGetResponse<BlogEngine> result;
-            objectList.Clear();
-            using (BlogEngineDaperManager dapper = new(_config))
-            {
-                result = dapper.GetByFK_BlogEngine_Profiles(ProfileId);
-                if (result.ResultData != null)
-                {
-                    foreach (var resultObject in result.ResultData)
-                    {
-                        objectList.Add(resultObject);
-                    }
-                }
-            }
-            responseMethod.RowsAffected = result.TotalResults;
-            responseMethod.ResponseCode = 200;
-            responseMethod.ResponseMessage = ResourceMessage.repositoryResponseMessageOk;
-            responseMethod.IdTransactionCode = null;
-            responseMethod.ResultData = objectList;
-            return responseMethod;
-        }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="BehaviourTypeId"></param> 
-        /// <returns>EntityResponse<BlogEngine> Object.</returns>
-        public EntityResponse<BlogEngine> GetByFK_BlogEngine_BehaviourTypes(int BehaviourTypeId)
-        {
-            EntityGetResponse<BlogEngine> result;
-            objectList.Clear();
-            using (BlogEngineDaperManager dapper = new(_config))
-            {
-                result = dapper.GetByFK_BlogEngine_BehaviourTypes(BehaviourTypeId);
-                if (result.ResultData != null)
-                {
-                    foreach (var resultObject in result.ResultData)
-                    {
-                        objectList.Add(resultObject);
-                    }
-                }
-            }
-            responseMethod.RowsAffected = result.TotalResults;
-            responseMethod.ResponseCode = 200;
-            responseMethod.ResponseMessage = ResourceMessage.repositoryResponseMessageOk;
-            responseMethod.IdTransactionCode = null;
-            responseMethod.ResultData = objectList;
-            return responseMethod;
-        }
-
-
+        }       
     }
 }

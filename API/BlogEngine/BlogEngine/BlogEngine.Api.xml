@@ -128,24 +128,6 @@
             <response code="401">Unauthorized.</response>
             <response code="403">Request Forbidden.</response>
         </member>
-        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetByProfileId(System.Int32)">
-            <summary>
-            Get an item by its foreignKey from the entity.
-            </summary>
-            <response code="200">Succesfully.</response>
-            <response code="400">Bad Request.</response>
-            <response code="401">Unauthorized.</response>
-            <response code="403">Request Forbidden.</response>
-        </member>
-        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetByBlogEngineTypeId(System.Int32)">
-            <summary>
-            Get an item by its foreignKey from the entity.
-            </summary>
-            <response code="200">Succesfully.</response>
-            <response code="400">Bad Request.</response>
-            <response code="401">Unauthorized.</response>
-            <response code="403">Request Forbidden.</response>
-        </member>
         <member name="T:BlogEngine.Api.Filters.TokenValidate">
             <summary>
             Filter to Get the User Authenticated from B2C token.  

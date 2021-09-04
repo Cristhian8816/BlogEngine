@@ -13,7 +13,7 @@ namespace BlogEngine.Api.Controllers
     /// Here goes all the controllers fot the BlogEngine Entity.
     /// </summary>
     [Authorize]
-    [RequiredScope("tasks.Authentication")]    
+    [RequiredScope("task.authentication")]    
     [Route("api/[controller]/")]
     [ServiceFilter(typeof(TokenValidate))]
     public class BlogEngineController : BaseController
@@ -154,7 +154,8 @@ namespace BlogEngine.Api.Controllers
         [HttpGet("GetListByParams")]
         public IActionResult GetListByParams(BlogEngineGetListByParams objectGetListByParams)
         {
-            EntityResponse<BlogEngine> response = _managerBusiness.GetListByParams(objectGetListByParams);
+            UsersAuthenticated userAuthenticated = this.UsersAuthenticated;
+            EntityResponse<BlogEngine> response = _managerBusiness.GetListByParams(objectGetListByParams, userAuthenticated);
             return StatusCode(response.ResponseCode, response);
         }
 
@@ -177,45 +178,5 @@ namespace BlogEngine.Api.Controllers
             EntityResponse<BlogEngine> response = _managerBusiness.GetListOrdered(objectGetListOrdered);
             return StatusCode(response.ResponseCode, response);
         }
-
-
-        /// <summary>
-        /// Get an item by its foreignKey from the entity.
-        /// </summary>
-        /// <response code="200">Succesfully.</response>
-        /// <response code="400">Bad Request.</response>
-        /// <response code="401">Unauthorized.</response>
-        /// <response code="403">Request Forbidden.</response>
-        [ProducesResponseType((int)System.Net.HttpStatusCode.OK)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.BadRequest)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.Unauthorized)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.Forbidden)]
-        [Produces("application/json", Type = typeof(BlogEngine))]
-        [HttpGet("GetByProfileId")]
-        public IActionResult GetByProfileId(int ProfileId)
-        {
-            EntityResponse<BlogEngine> response = _managerBusiness.GetByFK_BlogEngine_Profiles(ProfileId);
-            return StatusCode(response.ResponseCode, response);
-        }
-
-        /// <summary>
-        /// Get an item by its foreignKey from the entity.
-        /// </summary>
-        /// <response code="200">Succesfully.</response>
-        /// <response code="400">Bad Request.</response>
-        /// <response code="401">Unauthorized.</response>
-        /// <response code="403">Request Forbidden.</response>
-        [ProducesResponseType((int)System.Net.HttpStatusCode.OK)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.BadRequest)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.Unauthorized)]
-        [ProducesResponseType((int)System.Net.HttpStatusCode.Forbidden)]
-        [Produces("application/json", Type = typeof(BlogEngine))]
-        [HttpGet("GetByBlogEngineTypeId")]
-        public IActionResult GetByBlogEngineTypeId(int BlogEngineTypesId)
-        {
-            EntityResponse<BlogEngine> response = _managerBusiness.GetByFK_BlogEngine_Profiles(BlogEngineTypesId);
-            return StatusCode(response.ResponseCode, response);
-        }
-
     }
 }

@@ -34,7 +34,7 @@ namespace BlogEngine.Repository
         /// <returns></returns>
         public Collection<BlogEngine> GetList()
         {
-            string storedProcedured = "EXEC gvdp.BlogEngine_GetList";
+            string storedProcedured = "EXEC Blogs_GetList";
             var response = this.GetList(storedProcedured);
             return response;
         }
@@ -46,7 +46,7 @@ namespace BlogEngine.Repository
         /// <returns></returns>
         public BlogEngine GetById(EntityPrimaryKey objectGetbyId)
         {
-            string storedProcedured = "EXEC gvdp.BlogEngine_GetById @Id";
+            string storedProcedured = "EXEC Blogs_GetById @Id";
             DynamicParameters parameter = new DynamicParameters();
             parameter.Add("@Id", objectGetbyId.Id);
             var QueryResponse = this.GetById(storedProcedured, parameter);
@@ -60,7 +60,7 @@ namespace BlogEngine.Repository
         /// <returns></returns>
         public int Delete(EntityPrimaryKey objectDelete)
         {
-            string storedProcedured = "EXEC gvdp.BlogEngine_Delete @Id";
+            string storedProcedured = "EXEC Blogs_Delete @Id";
             DynamicParameters parameter = new DynamicParameters();
             parameter.Add("@Id", objectDelete.Id);
             var RowsAffected = this.Delete(storedProcedured, parameter);
@@ -78,23 +78,25 @@ namespace BlogEngine.Repository
             EntityInsertResponse IdTransactionCode = new EntityInsertResponse();
             if (objectInsert != null)
             {
-                string storedProcedured = "EXEC gvdp.BlogEngine_Insert "
+                string storedProcedured = "EXEC Blogs_Insert "
 
-                + "@Name,"
+                + "@Title,"
                 + "@Description,"
-                + "@ProfileId,"
-                + "@BehaviourTypeId,"
+                + "@Owner,"
                 + "@CreatedAt,"
-                + "@UpdatedAt,";
+                + "@ModifiedAt,"
+                + "@CreatedBy,"
+                + "@ModifiedBy,";
                 storedProcedured = storedProcedured.Remove(storedProcedured.Length - 1);
                 DynamicParameters parameter = new DynamicParameters();
 
-                parameter.Add("@Name", objectInsert.Name);
+                parameter.Add("@Title", objectInsert.Title);
                 parameter.Add("@Description", objectInsert.Description);
-                parameter.Add("@ProfileId", objectInsert.ProfileId);
-                parameter.Add("@BehaviourTypeId", objectInsert.BehaviourTypeId);
+                parameter.Add("@Owner", objectInsert.Owner);             
                 parameter.Add("@CreatedAt", objectInsert.CreatedAt);
-                parameter.Add("@UpdatedAt", objectInsert.UpdatedAt);               
+                parameter.Add("@ModifiedAt", objectInsert.ModifiedAt);
+                parameter.Add("@CreatedBy", userAuthenticated.email);
+                parameter.Add("@ModifiedBy", userAuthenticated.email);
                 IdTransactionCode = this.Insert(storedProcedured, parameter);
             }
             return IdTransactionCode.IdTransactionCode;
@@ -105,24 +107,24 @@ namespace BlogEngine.Repository
         /// </summary>
         /// <param name="objectUpdate"></param>
         /// <returns></returns>
-        public int Update(BlogEngine objectUpdate)
+        public int Update(BlogEngine objectUpdate, UsersAuthenticated userAuthenticated)
         {
             int rowsAffected = 0;
             if (objectUpdate != null)
             {
-                string storedProcedured = "EXEC gvdp.BlogEngine_Update "
+                string storedProcedured = "EXEC Blogs_Update "
                            + "@Id,"
-                           + "@Name,"
-                           + "@Description,"
-                           + "@ProfileId,"
-                           + "@BehaviourTypeId,";
+                           + "@Title,"
+                           + "@Owner, "
+                           + "@Description,"                           
+                           + "@ModifiedBy,";
                 storedProcedured = storedProcedured.Remove(storedProcedured.Length - 1);
                 DynamicParameters parameter = new DynamicParameters();
                 parameter.Add("@Id", objectUpdate.Id);
-                parameter.Add("@Name", objectUpdate.Name);
-                parameter.Add("@Description", objectUpdate.Description);
-                parameter.Add("@ProfileId", objectUpdate.ProfileId);                           
-                parameter.Add("@BehaviourTypeId", objectUpdate.BehaviourTypeId);
+                parameter.Add("@Title", objectUpdate.Title);
+                parameter.Add("@Owner", objectUpdate.Owner);
+                parameter.Add("@Description", objectUpdate.Description);               
+                parameter.Add("@ModifiedBy", userAuthenticated.email);
                 rowsAffected = this.Update(storedProcedured, parameter);
             }
             return rowsAffected;
@@ -133,30 +135,32 @@ namespace BlogEngine.Repository
         /// </summary>
         /// <param name="objectGetListByParams"></param>
         /// <returns></returns>
-        public EntityGetResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams)
+        public EntityGetResponse<BlogEngine> GetListByParams(BlogEngineGetListByParams objectGetListByParams, UsersAuthenticated userAuthenticated)
         {
             if (objectGetListByParams != null)
             {
-                string storedProcedured = "EXEC gvdp.BlogEngine_GetListByParams "
+                string storedProcedured = "EXEC Blogs_GetListByParams "
                     + "@Id,"
-                    + "@Name,"
+                    + "@Title,"
                     + "@Description,"
-                    + "@ProfileId,"
-                    + "@BehaviourTypeId,"
+                    + "@Owner,"                   
                     + "@CreatedAt,"
-                    + "@UpdatedAt,"                  
+                    + "@ModifiedAt,"
+                    + "@CreatedBy,"
+                    + "@ModifiedBy,"
                     + "@OrderBy,"
                     + "@Ascendent, "
                     + "@PageNumber,"
                     + "@ResultsPerPage";
                 DynamicParameters parameter = new DynamicParameters();
                 parameter.Add("@Id", objectGetListByParams.Id);
-                parameter.Add("@Name", objectGetListByParams.Name);
+                parameter.Add("@Title", objectGetListByParams.Title);
                 parameter.Add("@Description", objectGetListByParams.Description);
-                parameter.Add("@ProfileId", objectGetListByParams.ProfileId);
-                parameter.Add("@BehaviourTypeId", objectGetListByParams.BehaviourTypeId);
+                parameter.Add("@Owner", objectGetListByParams.Owner);
                 parameter.Add("@CreatedAt", objectGetListByParams.CreatedAt);
-                parameter.Add("@UpdatedAt", objectGetListByParams.UpdatedAt);               
+                parameter.Add("@ModifiedAt", objectGetListByParams.ModifiedAt);
+                parameter.Add("@CreatedBy", userAuthenticated.email);
+                parameter.Add("@ModifiedBy", userAuthenticated.email);
                 parameter.Add("@OrderBy", objectGetListByParams.OrderBy);
                 parameter.Add("@Ascendent", objectGetListByParams.Ascendent);
                 parameter.Add("@PageNumber", objectGetListByParams.PageNumber);
@@ -184,34 +188,6 @@ namespace BlogEngine.Repository
                 parameter.Add("@ResultsPerPage", objectGetListOrdered.ResultsPerPage);
                 objectGetResponse = this.GetListByParams(storedProcedured, parameter);
             }
-            return objectGetResponse;
-        }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="ProfileId"></param> 
-        /// <returns>EntityGetResponse<BlogEngine> Object.</returns>
-        public EntityGetResponse<BlogEngine> GetByFK_BlogEngine_Profiles(int ProfileId)
-        {
-            string storedProcedured = "EXEC gvdp.BlogEngine_GetByFK_BlogEngine_Profiles @ProfileId";
-            DynamicParameters parameter = new DynamicParameters();
-            parameter.Add("@ProfileId", ProfileId);
-            objectGetResponse = this.GetListByParams(storedProcedured, parameter);
-            return objectGetResponse;
-        }
-
-        /// <summary>
-        /// Get from GetByFK_BlogEngine_Profiles.
-        /// </summary>
-        /// <param name="BehaviourTypeId"></param> 
-        /// <returns>EntityGetResponse<BlogEngine> Object.</returns>
-        public EntityGetResponse<BlogEngine> GetByFK_BlogEngine_BehaviourTypes(int BehaviourTypeId)
-        {
-            string storedProcedured = "EXEC gvdp.BlogEngine_GetByFK_BlogEngine_BehaviourTypes @BehaviourTypeId";
-            DynamicParameters parameter = new DynamicParameters();
-            parameter.Add("@BehaviourTypeId", BehaviourTypeId);
-            objectGetResponse = this.GetListByParams(storedProcedured, parameter);
             return objectGetResponse;
         }
     }
