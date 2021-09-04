@@ -1,0 +1,1443 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SWO.SpectrumGvdp.Api</name>
+    </assembly>
+    <members>
+        <member name="T:SWO.SpectrumGvdp.Api.Config.SwaggerConfig">
+            <summary>
+            Here goes the swagger configuration
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Config.SwaggerConfig.AddRegistrationSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the registration.
+            </summary>
+            <param name="services">The services.</param>
+            <returns>IServiceCollection.</returns>
+            <remarks>Elkin Vasquez Isenia</remarks>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Config.SwaggerConfig.AddRegistration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds the registration.
+            </summary>
+            <param name="app">The application.</param>
+            <returns>IApplicationBuilder.</returns>
+            <remarks>Elkin Vasquez Isenia</remarks>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.AccountsController">
+            <summary>
+            Here goes all the controllers for the accounts entities
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.AccountsController._managerBusiness">
+            <summary>
+            SpectrumGvdpBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IAccountsBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>EntityResponse<Account></Account>.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.Insert(SWO.SpectrumGvdp.Entities.Model.AccountInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.Update(SWO.SpectrumGvdp.Entities.Model.Account)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.AccountGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AccountsController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.AlergiesController">
+            <summary>
+            Here goes all the controllers fot the Alergies Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.AlergiesController._managerBusiness">
+            <summary>
+            AlergiesBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IAlergiesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.Insert(SWO.SpectrumGvdp.Entities.Model.AlergiesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.Update(SWO.SpectrumGvdp.Entities.Model.Alergies)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.AlergiesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.AlergiesController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.BaseController">
+            <summary>
+            Here goes the base controller for GVDP.  
+            </summary> 
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.BaseController._usersAuthenticated">
+            <summary>
+            Inicialization a new variable of User Authenticated.  
+            </summary> 
+        </member>
+        <member name="P:SWO.SpectrumGvdp.Api.Controllers.BaseController.UsersAuthenticated">
+            <summary>
+            Gets User Authenticated by B2C token.  
+            </summary> 
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.BehavioursController">
+            <summary>
+            Here goes all the controllers fot the Behaviours Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.BehavioursController._managerBusiness">
+            <summary>
+            BehavioursBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IBehavioursBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.Insert(SWO.SpectrumGvdp.Entities.Model.BehavioursInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.Update(SWO.SpectrumGvdp.Entities.Model.Behaviours)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.BehavioursGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>BehavioursResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.BehavioursController.GetByBehaviourTypeId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.ContactsController">
+            <summary>
+            Here goes all the controllers fot the SpectrumGvdp Entity.  
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.ContactsController._managerBusiness">
+            <summary>
+            ContactBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IContactsBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.Insert(SWO.SpectrumGvdp.Entities.Model.ContactsInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.Update(SWO.SpectrumGvdp.Entities.Model.Contacts)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.ContactsGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ContactsController.GetByContactTypeId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController">
+            <summary>
+            Here goes all the controllers fot the DeescalationStrategies Entity.  
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController._managerBusiness">
+            <summary>
+            DeescalationStrategiesBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IDeescalationStrategiesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.Insert(SWO.SpectrumGvdp.Entities.Model.DeescalationStrategiesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.Update(SWO.SpectrumGvdp.Entities.Model.DeescalationStrategies)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.DeescalationStrategiesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DeescalationStrategiesController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController">
+            <summary>
+            Here goes all the controllers fot the Diagnosis Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController._managerBusiness">
+            <summary>
+            DiagnosisBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IDiagnosisBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.Insert(SWO.SpectrumGvdp.Entities.Model.DiagnosisInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.Update(SWO.SpectrumGvdp.Entities.Model.Diagnosis)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.DiagnosisGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>DiagnosisResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DiagnosisController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.DislikesController">
+            <summary>
+            Here goes all the controllers fot the Dislikes Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.DislikesController._managerBusiness">
+            <summary>
+            DislikesBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IDislikesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.Insert(SWO.SpectrumGvdp.Entities.Model.DislikesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.Update(SWO.SpectrumGvdp.Entities.Model.Dislikes)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.DislikesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>DislikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.DislikesController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.GendersController">
+            <summary>
+            Here goes all the controllers fot the SpectrumGvdp Entity.  
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.GendersController._managerBusiness">
+            <summary>
+            ContactBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IGendersBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>GendersResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.Insert(SWO.SpectrumGvdp.Entities.Model.GendersInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.Update(SWO.SpectrumGvdp.Entities.Model.Genders)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.GendersGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.GendersController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController">
+            <summary>
+            Here goes all the controllers fot the IdentityProviders Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController._managerBusiness">
+            <summary>
+            IdentityProvidersBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IIdentityProvidersBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.Insert(SWO.SpectrumGvdp.Entities.Model.IdentityProvidersInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.Update(SWO.SpectrumGvdp.Entities.Model.IdentityProviders)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.IdentityProvidersGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.IdentityProvidersController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.LanguagesController">
+            <summary>
+            Here goes all the controllers fot the SpectrumGvdp Entity.  
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.LanguagesController._managerBusiness">
+            <summary>
+            LanguagestBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.ILanguagesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>LanguagesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.Insert(SWO.SpectrumGvdp.Entities.Model.LanguagesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.Update(SWO.SpectrumGvdp.Entities.Model.Languages)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.LanguagesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LanguagesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.LikesController">
+            <summary>
+            Here goes all the controllers fot the Likes Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.LikesController._managerBusiness">
+            <summary>
+            LikesBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.ILikesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.Insert(SWO.SpectrumGvdp.Entities.Model.LikesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.Update(SWO.SpectrumGvdp.Entities.Model.Likes)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.LikesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>LikesResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.LikesController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.ProfilesController">
+            <summary>
+            Here goes all the controllers for the signup entities
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.ProfilesController._managerBusiness">
+            <summary>
+            SpectrumGvdpBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IProfilesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.Insert(SWO.SpectrumGvdp.Entities.Model.ProfileInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.Update(SWO.SpectrumGvdp.Entities.Model.Profile)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.ProfileGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.ProfilesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.UsersController">
+            <summary>
+            Here goes all the controllers for the user entities
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.UsersController._managerBusiness">
+            <summary>
+            SpectrumGvdpBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IUserBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.Insert(SWO.SpectrumGvdp.Entities.Model.UserInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.Update(SWO.SpectrumGvdp.Entities.Model.UserGvdp)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>SpectrumGvdpResponse.</returns>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.UserGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UsersController.SignUp(SWO.SpectrumGvdp.Entities.Model.UserInsertRequest)">
+            <summary>
+            Do the sign up from a user.
+            </summary>
+            <returns>SpectrumGvdpResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController">
+            <summary>
+            Here goes all the controllers fot the UserStatuses Entity.
+            </summary>
+        </member>
+        <member name="F:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController._managerBusiness">
+            <summary>
+            UserStatusesBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.#ctor(SWO.SpectrumGvdp.Business.Interfaces.IUserStatusesBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:SWO.SpectrumGvdp.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.GetById(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.Delete(SWO.SpectrumGvdp.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.Insert(SWO.SpectrumGvdp.Entities.Model.UserStatusesInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.Update(SWO.SpectrumGvdp.Entities.Model.UserStatuses)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.GetListByParams(SWO.SpectrumGvdp.Entities.Model.UserStatusesGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.GetListOrdered(SWO.SpectrumGvdp.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Controllers.UserStatusesController.GetUserStatus">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>EntityResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Api.Filters.TokenValidate">
+            <summary>
+            Filter to Get the User Authenticated from B2C token.  
+            </summary> 
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Filters.TokenValidate.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Method not implemented  
+            </summary> 
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Api.Filters.TokenValidate.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Method to get User Authenticated object 
+            </summary> 
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Program">
+            <summary>
+            Program file.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Program.Main(System.String[])">
+            <summary>
+            Main.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Initializes a new instance of the Microsoft.AspNetCore.Hosting.WebHostBuilder
+            class with pre-configured defaults.
+            </summary>
+            <returns>objeto de tipo <see cref="T:Microsoft.Extensions.Hosting.IHostBuilder"/></returns>
+        </member>
+        <member name="T:SWO.SpectrumGvdp.Startup">
+            <summary>
+            Startup.
+            </summary>
+        </member>
+        <member name="P:SWO.SpectrumGvdp.Startup.Configuration">
+            <summary>
+            Configuration Interface property.
+            </summary>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup constructor
+            </summary>
+            <param name="configuration">Application configuration</param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Service Collection Interface.</param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Startup.ConfigureCorsService(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Configure CORS Service.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:SWO.SpectrumGvdp.Startup.ConfigureCorsApp(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Configure Cors App.
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

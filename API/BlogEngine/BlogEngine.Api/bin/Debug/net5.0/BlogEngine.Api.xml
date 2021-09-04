@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogEngine.Api</name>
+    </assembly>
+    <members>
+        <member name="T:BlogEngine.Api.Config.SwaggerConfig">
+            <summary>
+            Here goes the swagger configuration
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Api.Config.SwaggerConfig.AddRegistrationSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the registration.
+            </summary>
+            <param name="services">The services.</param>
+            <returns>IServiceCollection.</returns>
+            <remarks>Elkin Vasquez Isenia</remarks>
+        </member>
+        <member name="M:BlogEngine.Api.Config.SwaggerConfig.AddRegistration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds the registration.
+            </summary>
+            <param name="app">The application.</param>
+            <returns>IApplicationBuilder.</returns>
+            <remarks>Elkin Vasquez Isenia</remarks>
+        </member>
+        <member name="T:BlogEngine.Api.Controllers.BaseController">
+            <summary>
+            Here goes the base controller for GVDP.  
+            </summary> 
+        </member>
+        <member name="F:BlogEngine.Api.Controllers.BaseController._usersAuthenticated">
+            <summary>
+            Inicialization a new variable of User Authenticated.  
+            </summary> 
+        </member>
+        <member name="P:BlogEngine.Api.Controllers.BaseController.UsersAuthenticated">
+            <summary>
+            Gets User Authenticated by B2C token.  
+            </summary> 
+        </member>
+        <member name="T:BlogEngine.Api.Controllers.BlogEngineController">
+            <summary>
+            Here goes all the controllers fot the BlogEngine Entity.
+            </summary>
+        </member>
+        <member name="F:BlogEngine.Api.Controllers.BlogEngineController._managerBusiness">
+            <summary>
+            BlogEngineBusiness Interface.
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.#ctor(BlogEngine.Business.Interfaces.IBlogEngineBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="N:BlogEngine.Api.Controllers"/>
+            </summary>
+            <param name="managerBusiness"></param>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetList">
+            <summary>
+            Get all the items from the entity.
+            </summary>
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetById(BlogEngine.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Get an item by its id from the entity.
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.Delete(BlogEngine.Entities.Model.EntityPrimaryKey)">
+            <summary>
+            Delete an Item by its id.
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.Insert(BlogEngine.Entities.Model.BlogEngineInsertRequest)">
+            <summary>
+            Insert an item into the entity.
+            </summary>
+            <param name="objectInsert"></param>
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.Update(BlogEngine.Entities.Model.BlogEngine)">
+            <summary>
+            Update an item from the entity.
+            </summary>
+            <param name="objectUpdate"></param>
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetListByParams(BlogEngine.Entities.Model.BlogEngineGetListByParams)">
+            <summary>
+            Get the List depending on the paramaters sent.
+              </summary>
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetListOrdered(BlogEngine.Entities.Model.EntityGetListOrdered)">
+            <summary>
+            Get all the items from the entity with pagination.
+            </summary>
+            <returns>BlogEngineResponse.</returns>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetByProfileId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="M:BlogEngine.Api.Controllers.BlogEngineController.GetByBlogEngineTypeId(System.Int32)">
+            <summary>
+            Get an item by its foreignKey from the entity.
+            </summary>
+            <response code="200">Succesfully.</response>
+            <response code="400">Bad Request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Request Forbidden.</response>
+        </member>
+        <member name="T:BlogEngine.Api.Filters.TokenValidate">
+            <summary>
+            Filter to Get the User Authenticated from B2C token.  
+            </summary> 
+        </member>
+        <member name="M:BlogEngine.Api.Filters.TokenValidate.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Method not implemented  
+            </summary> 
+        </member>
+        <member name="M:BlogEngine.Api.Filters.TokenValidate.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Method to get User Authenticated object 
+            </summary> 
+        </member>
+        <member name="T:BlogEngine.Program">
+            <summary>
+            Program file.
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Program.Main(System.String[])">
+            <summary>
+            Main.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:BlogEngine.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Initializes a new instance of the Microsoft.AspNetCore.Hosting.WebHostBuilder
+            class with pre-configured defaults.
+            </summary>
+            <returns>objeto de tipo <see cref="T:Microsoft.Extensions.Hosting.IHostBuilder"/></returns>
+        </member>
+        <member name="T:BlogEngine.Startup">
+            <summary>
+            Startup.
+            </summary>
+        </member>
+        <member name="P:BlogEngine.Startup.Configuration">
+            <summary>
+            Configuration Interface property.
+            </summary>
+        </member>
+        <member name="M:BlogEngine.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup constructor
+            </summary>
+            <param name="configuration">Application configuration</param>
+        </member>
+        <member name="M:BlogEngine.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Service Collection Interface.</param>
+        </member>
+        <member name="M:BlogEngine.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:BlogEngine.Startup.ConfigureCorsService(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Configure CORS Service.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BlogEngine.Startup.ConfigureCorsApp(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Configure Cors App.
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

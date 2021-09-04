@@ -1,0 +1,17 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\ref\SWO.SpectrumGvdp.Business.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.csproj.CopyComplete
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\ref\SWO.SpectrumGvdp.Business.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Business.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Business.Interfaces.pdb

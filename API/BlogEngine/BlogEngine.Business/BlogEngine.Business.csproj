@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogEngine.Business.Interfaces\BlogEngine.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\BlogEngine.Repository.Interfaces\BlogEngine.Repository.Interfaces.csproj" />
+    <ProjectReference Include="..\BlogEngine.Utils\BlogEngine.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

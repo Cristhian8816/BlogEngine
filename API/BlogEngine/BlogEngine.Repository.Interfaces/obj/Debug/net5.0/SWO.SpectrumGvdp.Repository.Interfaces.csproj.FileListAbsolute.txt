@@ -1,0 +1,17 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\ref\SWO.SpectrumGvdp.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.csproj.CopyComplete
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\ref\SWO.SpectrumGvdp.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Repository.Interfaces\obj\Debug\net5.0\SWO.SpectrumGvdp.Repository.Interfaces.pdb

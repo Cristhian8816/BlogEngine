@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SWO.SpectrumGvdp.Repository.Interfaces/1.0.0": {
+        "dependencies": {
+          "SWO.SpectrumGvdp.Entities": "1.0.0"
+        },
+        "runtime": {
+          "SWO.SpectrumGvdp.Repository.Interfaces.dll": {}
+        }
+      },
+      "SWO.SpectrumGvdp.Entities/1.0.0": {
+        "dependencies": {
+          "SWO.SpectrumGvdp.Utils": "1.0.0"
+        },
+        "runtime": {
+          "SWO.SpectrumGvdp.Entities.dll": {}
+        }
+      },
+      "SWO.SpectrumGvdp.Utils/1.0.0": {
+        "runtime": {
+          "SWO.SpectrumGvdp.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SWO.SpectrumGvdp.Repository.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SWO.SpectrumGvdp.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SWO.SpectrumGvdp.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

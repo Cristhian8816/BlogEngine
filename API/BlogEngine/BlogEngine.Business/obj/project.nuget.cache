@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vXcjA5g8w3IeA4oKEMzirSLurrI3K4iwgWQX6dNiS9WMCvdlkynJ1invoi5nJSVod6EkhZl3M3aSEdn1/zF9Rw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cgomezl\\Desktop\\ZemogaTest\\API\\BlogEngine\\BlogEngine.Business\\BlogEngine.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cgomezl\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\cgomezl\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.0\\microsoft.identitymodel.jsonwebtokens.6.12.0.nupkg.sha512",
+    "C:\\Users\\cgomezl\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.0\\microsoft.identitymodel.logging.6.12.0.nupkg.sha512",
+    "C:\\Users\\cgomezl\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.0\\microsoft.identitymodel.tokens.6.12.0.nupkg.sha512",
+    "C:\\Users\\cgomezl\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.0\\system.identitymodel.tokens.jwt.6.12.0.nupkg.sha512",
+    "C:\\Users\\cgomezl\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

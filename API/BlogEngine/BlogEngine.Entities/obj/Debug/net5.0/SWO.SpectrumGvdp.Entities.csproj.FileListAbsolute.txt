@@ -1,0 +1,15 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\ref\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\SWO.SpectrumGvdp.Entities.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.csproj.CopyComplete
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\ref\SWO.SpectrumGvdp.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Entities\obj\Debug\net5.0\SWO.SpectrumGvdp.Entities.pdb

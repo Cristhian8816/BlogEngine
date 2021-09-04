@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Api/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Api/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Business/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Business/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Business.Interfaces/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Business.Interfaces/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Entities/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Entities/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Repository/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Repository/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Repository.Interfaces/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Repository.Interfaces/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Tests/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Tests/obj
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Utils/bin/Debug
+/SWO.SpectrumGvdp/SWO.SpectrumGvdp.Utils/obj

@@ -1,0 +1,14 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\bin\Debug\net5.0\ref\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\bin\Debug\net5.0\SWO.SpectrumGvdp.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.Resources.ResourceMessage.resources
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.csproj.GenerateResource.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\ref\SWO.SpectrumGvdp.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\SWO.SpectrumGvdp\SWO.SpectrumGvdp.Utils\obj\Debug\net5.0\SWO.SpectrumGvdp.Utils.pdb
