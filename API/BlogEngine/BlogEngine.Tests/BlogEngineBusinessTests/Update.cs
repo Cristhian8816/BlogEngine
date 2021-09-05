@@ -56,7 +56,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 Title = null,
                 Description = null,               
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now,
+                ModifiedAt = System.DateTime.Now,
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {
@@ -89,7 +89,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 Description = "c",
                 Owner = "User",               
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now               
+                ModifiedAt = System.DateTime.Now               
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {
@@ -115,7 +115,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 Title = "c",
                 Description = "c",                
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now,
+                ModifiedAt = System.DateTime.Now,
             };
             EntityResponse<BlogEngine> ResponseService;
             ResponseService = new EntityResponse<BlogEngine>
@@ -152,7 +152,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 Title = "c",
                 Description = "c",                
                 CreatedAt = System.DateTime.Now,
-                UpdatedAt = System.DateTime.Now,
+                ModifiedAt = System.DateTime.Now,
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {

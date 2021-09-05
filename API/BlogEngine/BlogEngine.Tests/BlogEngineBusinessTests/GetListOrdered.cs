@@ -140,7 +140,7 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                     Title = "c" + i.ToString(),
                     Description = "c" + i.ToString(),                   
                     CreatedAt = System.DateTime.Now,
-                    UpdatedAt = System.DateTime.Now,
+                    ModifiedAt = System.DateTime.Now,
                 };
                 objectList.Add(BlogEnginetest);
             }

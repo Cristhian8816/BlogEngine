@@ -52,7 +52,7 @@ namespace BlogEngine.Entities.Model
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// Gets or Sets from UpdatedAt.
+        /// Gets or Sets from ModifiedAt.
         /// </summary>
         [Required]
         public DateTime ModifiedAt { get; set; }
