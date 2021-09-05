@@ -1,8 +1,8 @@
 ﻿// ------------------------------------------------------------------
-// <copyright file="EntityGetListOrdered.cs" company="Intergrupo S.A">
-// Autor: Marbel Arrieta (marbel.arrieta@softwareone.com)
-// Date: 08/11/2021 
-// Source Code File C# - Intergrupo.Hermes
+// <copyright file="EntityGetListOrdered.cs" company="Zemoga">
+// Autor: Inge Cristhian Gomez
+// Date: 05/09/2021
+
 // All rights reserved
 // </copyright>
 // ------------------------------------------------------------------

@@ -1,6 +1,6 @@
 ﻿// ------------------------------------------------------------------
-// <copyright file="UserLogin.cs" company="Intergrupo S.A">
-// Autor: Marbel Arrieta (marbel.arrieta@softwareone.com)
+// <copyright file="UserLogin.cs" company="Zemoga">
+// Autor: Inge Cristhian Gomez
 // Date: 08/09/2021 
 // Source Code File C# 
 // All rights reserved

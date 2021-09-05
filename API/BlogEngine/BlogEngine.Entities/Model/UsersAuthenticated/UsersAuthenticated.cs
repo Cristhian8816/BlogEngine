@@ -1,8 +1,8 @@
 // ------------------------------------------------------------------
-// <copyright file="UsersAuthenticated.cs" company="Intergrupo S.A">
+// <copyright file="UsersAuthenticated.cs" company="Zemoga">
 // Author: Cristhian Julian Gomez (cristhian.gomez@softwareone.com)
 // Date: 08/30/2021 
-// Source Code File C# - Intergrupo.Hermes
+
 // All rights reserved
 // </copyright>
 // ------------------------------------------------------------------

@@ -1,8 +1,8 @@
 // ------------------------------------------------------------------
-// <copyright file="Languages.cs" company="Intergrupo S.A">
+// <copyright file="Languages.cs" company="Zemoga">
 // Autor: Cristhian Gomez (cristhian.gomez@softwareone.com)
 // Date: 08/24/2021
-// Source Code File C# - Intergrupo.Hermes
+
 // All rights reserved
 // </copyright>
 // ------------------------------------------------------------------
