@@ -89,7 +89,9 @@ namespace BlogEngine.Tests.BlogEngineBusinessTests
                 Description = "c",
                 Owner = "User",               
                 CreatedAt = System.DateTime.Now,
-                ModifiedAt = System.DateTime.Now               
+                ModifiedAt = System.DateTime.Now,
+                CreatedBy = "user@user.com",
+                ModifiedBy = "user@user.com"
             };
             UsersAuthenticated usersAuthenticated = new UsersAuthenticated()
             {
