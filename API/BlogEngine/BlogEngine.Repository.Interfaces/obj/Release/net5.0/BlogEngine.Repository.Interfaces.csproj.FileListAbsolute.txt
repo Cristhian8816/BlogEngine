@@ -1,0 +1,17 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Repository.Interfaces.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\ref\BlogEngine.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Repository.Interfaces.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Entities.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\bin\Release\net5.0\BlogEngine.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.csproj.CopyComplete
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\ref\BlogEngine.Repository.Interfaces.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Repository.Interfaces\obj\Release\net5.0\BlogEngine.Repository.Interfaces.pdb

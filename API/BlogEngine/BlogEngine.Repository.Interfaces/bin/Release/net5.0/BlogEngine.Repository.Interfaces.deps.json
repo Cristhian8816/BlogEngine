@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BlogEngine.Repository.Interfaces/1.0.0": {
+        "dependencies": {
+          "BlogEngine.Entities": "1.0.0"
+        },
+        "runtime": {
+          "BlogEngine.Repository.Interfaces.dll": {}
+        }
+      },
+      "BlogEngine.Entities/1.0.0": {
+        "dependencies": {
+          "BlogEngine.Utils": "1.0.0"
+        },
+        "runtime": {
+          "BlogEngine.Entities.dll": {}
+        }
+      },
+      "BlogEngine.Utils/1.0.0": {
+        "runtime": {
+          "BlogEngine.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlogEngine.Repository.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogEngine.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogEngine.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

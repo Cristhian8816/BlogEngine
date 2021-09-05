@@ -1,0 +1,15 @@
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\BlogEngine.Entities.deps.json
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\BlogEngine.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\ref\BlogEngine.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\BlogEngine.Entities.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\BlogEngine.Utils.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\bin\Release\net5.0\BlogEngine.Utils.pdb
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.csproj.AssemblyReference.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.AssemblyInfoInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.AssemblyInfo.cs
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.csproj.CoreCompileInputs.cache
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.csproj.CopyComplete
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\ref\BlogEngine.Entities.dll
+C:\Users\cgomezl\Desktop\ZemogaTest\API\BlogEngine\BlogEngine.Entities\obj\Release\net5.0\BlogEngine.Entities.pdb
